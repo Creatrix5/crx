@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_company_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Company Name"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:theme="@style/Theme.App.Base"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/et_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Area"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:theme="@style/Theme.App.Base"
+            android:singleLine="true" />
+
+    <Button
+        android:id="@+id/btn_company_search"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/button_design_selected"
+        android:text="Search"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:textColor="@android:color/white" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.97"
+        android:background="#e6e7e8"
+        android:orientation="horizontal">
+
+        <ListView
+            android:id="@+id/list_directory_company"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="3dp"
+            android:layout_marginTop="8dp"></ListView>
+
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

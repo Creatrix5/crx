@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/et_first_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_weight="1"
+                    android:hint="First Name"
+                    android:singleLine="true"
+                    android:theme="@style/Theme.App.Base" />
+
+                <EditText
+                    android:id="@+id/et_last_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:hint="Last Name"
+                    android:singleLine="true"
+                    android:theme="@style/Theme.App.Base" />
+
+
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/et_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:hint="Area"
+                android:singleLine="true"
+                android:theme="@style/Theme.App.Base" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="OR"
+                android:textColor="@android:color/black" />
+
+            <EditText
+                android:id="@+id/et_contact_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:hint="Contact Number"
+                android:singleLine="true"
+                android:theme="@style/Theme.App.Base" />
+
+            <Button
+                android:id="@+id/btn_person_search"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/button_design_selected"
+                android:text="Search"
+                android:textColor="@android:color/white" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.97"
+                android:background="#e6e7e8"
+                android:orientation="horizontal">
+
+                <ListView
+                    android:id="@+id/list_directory_person"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:cacheColorHint="@android:color/transparent"
+                    android:divider="@android:color/transparent"
+                    android:dividerHeight="3dp"></ListView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
